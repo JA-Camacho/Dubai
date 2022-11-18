@@ -16,6 +16,27 @@
 	75%  {background-image: url(../imagenes/4.jpg);}
 }
 
-section {
-	text-align: center;
+section{
+	padding: 10px;
+}
+.ini {
+	text-align: -webkit-center;
+}
+
+.datos{
+	background-color: #F4E5C3;
+}
+
+ul li {
+	list-style: none;
+	margin: 10px;
+}
+
+.imagen_fondo {
+	background-image: url("../imagenes/comida.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 300px;
+	opacity: 0.5;
 }
