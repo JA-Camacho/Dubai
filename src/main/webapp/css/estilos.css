@@ -1,3 +1,6 @@
+main {
+	text-align: center;
+}
 .slider {
 	background-image: url("../imagenes/1.jpg");
 	background-size: 100% 100%;
@@ -37,6 +40,28 @@ ul li {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	height: 300px;
+	height: 350px;
 	opacity: 0.5;
+}
+
+.titulo_banner {
+	color: black;
+	text-align: center;
+	padding-top: 2em;
+	font-weight: bold;
+}
+.comida{
+	text-align: -webkit-center;
+}
+.carrusel {
+	width: 500px;
+	height: 500px;
+}
+
+.lugares {
+	background-color: #FAD8D7;
+}
+
+.parrafo {
+	text-align: justify;
 }

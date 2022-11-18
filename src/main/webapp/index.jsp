@@ -11,8 +11,6 @@
 	rel="stylesheet"
 	integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
 	crossorigin="anonymous">
-<link rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 <link href="css/estilos.css" rel="stylesheet">
 <link href="imagenes/dubai.ico" rel="icon">
 </head>
@@ -27,6 +25,7 @@
 				aria-current="page">Inicio</a></li>
 			<li class="nav-item"><a href="Comida.jsp" class="nav-link">Comida</a></li>
 			<li class="nav-item"><a href="Hospedaje.jsp" class="nav-link">Hospedaje</a></li>
+			<li class="nav-item"><a href="Interes.jsp" class="nav-link">Lugar Interes</a></li>
 			<li class="nav-item"><a href="Mapa.jsp" class="nav-link">Mapa</a></li>
 			<li class="nav-item"><a href="Evaluacion.jsp" class="nav-link">Evaluacion</a></li>
 		</ul>

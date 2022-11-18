@@ -16,7 +16,7 @@
 </head>
 <body>
 	<header
-		class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+		class="d-flex flex-wrap justify-content-center py-3 border-bottom"
 		style="background-color: #CFFDF5">
 		<img src="imagenes/Banner_dubai.png" alt="Banner Dubái"
 			class="d-flex mb-3 mb-md-0 me-md-auto" width="200px">
@@ -25,6 +25,7 @@
 				>Inicio</a></li>
 			<li class="nav-item"><a href="Comida.jsp" class="nav-link">Comida</a></li>
 			<li class="nav-item"><a href="Hospedaje.jsp" class="nav-link">Hospedaje</a></li>
+			<li class="nav-item"><a href="Interes.jsp" class="nav-link">Lugar Interes</a></li>
 			<li class="nav-item"><a href="Mapa.jsp" class="nav-link active" aria-current="page">Mapa</a></li>
 			<li class="nav-item"><a href="Evaluacion.jsp" class="nav-link">Evaluacion</a></li>
 		</ul>

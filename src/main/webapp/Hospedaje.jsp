@@ -16,21 +16,94 @@
 </head>
 <body>
 	<header
-		class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+		class="d-flex flex-wrap justify-content-center py-3 border-bottom"
 		style="background-color: #CFFDF5">
 		<img src="imagenes/Banner_dubai.png" alt="Banner Dubái"
 			class="d-flex mb-3 mb-md-0 me-md-auto" width="200px">
 		<ul class="nav nav-pills">
-			<li class="nav-item"><a href="index.jsp" class="nav-link"
-				>Inicio</a></li>
+			<li class="nav-item"><a href="index.jsp" class="nav-link">Inicio</a></li>
 			<li class="nav-item"><a href="Comida.jsp" class="nav-link">Comida</a></li>
-			<li class="nav-item"><a href="Hospedaje.jsp" class="nav-link active" aria-current="page">Hospedaje</a></li>
+			<li class="nav-item"><a href="Hospedaje.jsp"
+				class="nav-link active" aria-current="page">Hospedaje</a></li>
+			<li class="nav-item"><a href="Interes.jsp" class="nav-link">Lugar
+					Interes</a></li>
 			<li class="nav-item"><a href="Mapa.jsp" class="nav-link">Mapa</a></li>
 			<li class="nav-item"><a href="Evaluacion.jsp" class="nav-link">Evaluacion</a></li>
 		</ul>
 	</header>
 	<main>
-		<img src="imagenes/Pagina-en-construccion.jpg">
+		<h1>Hospedaje</h1>
+		<div class="album py-5 bg-light">
+			<div class="container">
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+					<div class="col">
+						<div class="card shadow-sm">
+							<h5>Premier Inn Dubai Ibn Battuta Mall</h5>
+							<img alt="Premier Inn Dubai Ibn Battuta Mall"
+								src="imagenes/premier-inn-dubai-ibn.jpg">
+							<div class="card-body">
+								<p class="parrafo">El Premier Inn Dubai Ibn Battuta Mall se
+									encuentra en Dubái, a 300 metros del centro comercial Ibn
+									Battuta. El establecimiento alberga un restaurante y está a
+									unos pasos de la estación de metro Ibn Battuta. Algunas
+									habitaciones tienen zona de estar. Todas disponen de TV de
+									pantalla plana vía satélite, hervidor de agua y baño privado.
+									La recepción está abierta las 24 horas.</p>
+								<a
+									href="https://www.booking.com/hotel/ae/premier-inn-dubai-ibn-battuta-mall.es.html">Reserva
+									Aqui</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm">
+							<h5>Premier Inn Dubai International Airport</h5>
+							<img alt="Premier Inn Dubai International Airport"
+								src="imagenes/PremierInn1.jpg">
+							<div class="card-body">
+								<p class="parrafo">El hotel Premier Inn Dubai International
+									Airport ofrece WiFi gratuita en todas las instalaciones y está
+									situado a solo 10 minutos en coche del aeropuerto internacional
+									de Dubái. El establecimiento proporciona un servicio gratuito
+									de traslado en autobús para todos los huéspedes entre el hotel
+									y las terminales 1 y 3 del aeropuerto. Las habitaciones
+									disponen de aire acondicionado y baño privado con ducha y
+									bañera. Las habitaciones, modernas y recién reformadas, también
+									tienen escritorio, set de té/café y TV de pantalla plana de 32
+									pulgadas.</p>
+								<a
+									href="https://www.booking.com/hotel/ae/premier-inn-dubai-international-airport.es.html">Reserva
+									Aqui</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card shadow-sm">
+							<h5>Premier Inn Dubai Al Joddaf Hotel</h5>
+							<img alt="Premier Inn Dubai Al Joddaf Hotel"
+								src="imagenes/premier-inn-dubai-al.jpg">
+							<div class="card-body">
+								<p class="parrafo">El Premier Inn Dubai Al Jaddaf está en
+									Dubái, a 6,4 km del World Trade Centre de Dubái, y ofrece
+									alojamiento, restaurante, aparcamiento privado gratuito,
+									piscina al aire libre y centro de fitness. Este hotel de 3
+									estrellas tiene recepción 24 horas, servicio de habitaciones y
+									WiFi gratuita. El alojamiento alberga un bar. Todas las
+									habitaciones del hotel disponen de zona de estar. Las
+									habitaciones del Premier Inn Dubai Al Jaddaf están equipadas
+									con aire acondicionado y caja fuerte. Todas las mañanas, el
+									alojamiento sirve un desayuno buffet o inglés/irlandés
+									completo.</p>
+								<a
+									href="https://www.booking.com/hotel/ae/premier-inn-dubai-al-jaddaf.es.html">Reserva
+									Aqui</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 	<footer
 		class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-0 border-top"
