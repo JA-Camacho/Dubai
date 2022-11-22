@@ -52,7 +52,7 @@
 					<div class="col">
 						<div class="card shadow-sm">
 							<h5>Burj Al Arab</h5>
-							<img alt="Burj Al Arab" src="imagenes/Burj_Al_Arab.jpg">
+							<img alt="Burj Al Arab" src="imagenes/Burj_Al_Arab.jpg" height="200px">
 							<div class="card-body">
 								<p class="parrafo">Es un hotel de lujo de 321 metros de
 									altura, siendo uno de los edificios hoteleros más
@@ -65,7 +65,7 @@
 					<div class="col">
 						<div class="card shadow-sm">
 							<h5>Dubai Mall</h5>
-							<img alt="Dubai Mall" src="imagenes/Dubai_Mall.jpg">
+							<img alt="Dubai Mall" src="imagenes/Dubai_Mall.jpg" height="200px">
 							<div class="card-body">
 								<p class="parrafo">Es el centro comercial más grande del
 									mundo basado en su área total y el sexto más grande en
@@ -82,7 +82,7 @@
 					<div class="col">
 						<div class="card shadow-sm">
 							<h5>Burj Khalifa</h5>
-							<img alt="Burj Khalifa" src="imagenes/Burj_Khalifa.jpg">
+							<img alt="Burj Khalifa" src="imagenes/Burj_Khalifa.jpg" height="200px">
 							<div class="card-body">
 								<p class="parrafo">Es un rascacielos ubicado en Dubái
 									(Emiratos Árabes Unidos), con 828 metros de altura, es la

@@ -54,7 +54,7 @@
 						<div class="card shadow-sm">
 							<h5>Premier Inn Dubai Ibn Battuta Mall</h5>
 							<img alt="Premier Inn Dubai Ibn Battuta Mall"
-								src="imagenes/premier-inn-dubai-ibn.jpg">
+								src="imagenes/premier-inn-dubai-ibn.jpg" height="200px">
 							<div class="card-body">
 								<p class="parrafo">
 									El Premier Inn Dubai Ibn Battuta Mall se encuentra en Dubái, a
@@ -85,7 +85,7 @@
 						<div class="card shadow-sm">
 							<h5>Premier Inn Dubai International Airport</h5>
 							<img alt="Premier Inn Dubai International Airport"
-								src="imagenes/PremierInn1.jpg">
+								src="imagenes/PremierInn1.jpg" height="200px">
 							<div class="card-body">
 								<p class="parrafo">El hotel Premier Inn Dubai International
 									Airport ofrece WiFi gratuita en todas las instalaciones y está
@@ -116,7 +116,7 @@
 						<div class="card shadow-sm">
 							<h5>Premier Inn Dubai Al Joddaf Hotel</h5>
 							<img alt="Premier Inn Dubai Al Joddaf Hotel"
-								src="imagenes/premier-inn-dubai-al.jpg">
+								src="imagenes/premier-inn-dubai-al.jpg" height="200px">
 							<div class="card-body">
 								<p class="parrafo">El Premier Inn Dubai Al Jaddaf está en
 									Dubái, a 6,4 km del World Trade Centre de Dubái, y ofrece
