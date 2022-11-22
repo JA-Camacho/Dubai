@@ -15,21 +15,35 @@
 <link href="imagenes/dubai.ico" rel="icon">
 </head>
 <body>
-	<header
-		class="d-flex flex-wrap justify-content-center py-3 border-bottom"
-		style="background-color: #CFFDF5">
-		<img src="imagenes/Banner_dubai.png" alt="Banner Dubái"
-			class="d-flex mb-3 mb-md-0 me-md-auto" width="200px">
-		<ul class="nav nav-pills">
-			<li class="nav-item"><a href="index.jsp" class="nav-link">Inicio</a></li>
-			<li class="nav-item"><a href="Comida.jsp" class="nav-link">Comida</a></li>
-			<li class="nav-item"><a href="Hospedaje.jsp"
-				class="nav-link active" aria-current="page">Hospedaje</a></li>
-			<li class="nav-item"><a href="Interes.jsp" class="nav-link">Lugar
-					Interes</a></li>
-			<li class="nav-item"><a href="Mapa.jsp" class="nav-link">Mapa</a></li>
-			<li class="nav-item"><a href="Evaluacion.jsp" class="nav-link">Evaluacion</a></li>
-		</ul>
+	<header style="background-color: #CFFDF5">
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-fluid">
+				<a class="navbar-brand"> <img src="imagenes/Banner_dubai.png"
+					alt="Banner Dubái" class="d-flex mb-3 mb-md-0 me-md-auto"
+					width="200px">
+				</a>
+				<button class="navbar-toggler" type="button"
+					data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end"
+					id="navbarSupportedContent">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a href="index.jsp" class="nav-link">Inicio</a></li>
+						<li class="nav-item"><a href="Comida.jsp" class="nav-link">Comida</a></li>
+						<li class="nav-item"><a href="Hospedaje.jsp"
+							class="nav-link active" aria-current="page">Hospedaje</a></li>
+						<li class="nav-item"><a href="Interes.jsp" class="nav-link">Lugar
+								Interes</a></li>
+						<li class="nav-item"><a href="Mapa.jsp" class="nav-link">Mapa</a></li>
+						<li class="nav-item"><a href="Evaluacion.jsp"
+							class="nav-link">Evaluacion</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</header>
 	<main>
 		<h1>Hospedaje</h1>
@@ -42,15 +56,27 @@
 							<img alt="Premier Inn Dubai Ibn Battuta Mall"
 								src="imagenes/premier-inn-dubai-ibn.jpg">
 							<div class="card-body">
-								<p class="parrafo">El Premier Inn Dubai Ibn Battuta Mall se
-									encuentra en Dubái, a 300 metros del centro comercial Ibn
-									Battuta. El establecimiento alberga un restaurante y está a
-									unos pasos de la estación de metro Ibn Battuta. Algunas
-									habitaciones tienen zona de estar. Todas disponen de TV de
-									pantalla plana vía satélite, hervidor de agua y baño privado.
-									La recepción está abierta las 24 horas.</p>
-								<a
-									href="https://www.booking.com/hotel/ae/premier-inn-dubai-ibn-battuta-mall.es.html">Reserva
+								<p class="parrafo">
+									El Premier Inn Dubai Ibn Battuta Mall se encuentra en Dubái, a
+									300 metros del centro comercial Ibn Battuta. El establecimiento
+									alberga un restaurante y está a unos pasos de la estación de
+									metro Ibn Battuta. Algunas habitaciones tienen zona de estar.
+									Todas disponen de TV de pantalla plana vía satélite, hervidor
+									de agua y baño privado. <br>La recepción está abierta las
+									24 horas.
+								</p>
+								<h3>Servicios</h3>
+								<ul class="servicios">
+									<li><img src="SVG/swimming-svgrepo-com.svg" height="20px" width="20px" alt="svgrepo.com"> 1 piscina</li>
+									<li><img src="SVG/wifi-svgrepo-com.svg" height="20px" width="20px" alt="svgrepo.com">WiFi Gratis</li>
+									<li><img src="SVG/family-svgrepo-com.svg" height="20px" width="20px" alt="svgrepo.com">Habitaciones familiares</li>
+									<li><img src="SVG/parking-svgrepo-com.svg" height="20px" width="20px" alt="svgrepo.com">Parking Gratis</li>
+									<li><img src="SVG/gym-svgrepo-com.svg" height="20px" width="20px" alt="svgrepo.com">Centro de fitness</li>
+									<li><img src="SVG/coffee-maker-svgrepo-com.svg" height="20px" width="20px" alt="svgrepo.com">Tetera/cafetera en todas las habitaciones</li>
+									<li><img src="SVG/bar-svgrepo-com.svg" height="20px" width="20px" alt="svgrepo.com">Bar</li>
+								</ul>
+								<a class="btn btn-primary"
+									href="https://www.booking.com/hotel/ae/premier-inn-dubai-ibn-battuta-mall.es.html" target="_blank">Reserva
 									Aqui</a>
 							</div>
 						</div>
@@ -71,8 +97,17 @@
 									bañera. Las habitaciones, modernas y recién reformadas, también
 									tienen escritorio, set de té/café y TV de pantalla plana de 32
 									pulgadas.</p>
-								<a
-									href="https://www.booking.com/hotel/ae/premier-inn-dubai-international-airport.es.html">Reserva
+									<h3>Servicios</h3>
+								<ul class="servicios">
+									<li><img src="SVG/swimming-svgrepo-com.svg" height="20px" width="20px" alt="svgrepo.com"> 1 piscina</li>
+									<li><img src="SVG/wifi-svgrepo-com.svg" height="20px" width="20px" alt="svgrepo.com">WiFi Gratis</li>
+									<li><img src="SVG/bus-svgrepo-com.svg" height="20px" width="20px" alt="svgrepo.com">Traslado aeropuerto (gratis)</li>
+									<li><img src="SVG/family-svgrepo-com.svg" height="20px" width="20px" alt="svgrepo.com">Habitaciones familiares</li>
+									<li><img src="SVG/parking-svgrepo-com.svg" height="20px" width="20px" alt="svgrepo.com">Parking Gratis</li>
+									<li><img src="SVG/bar-svgrepo-com.svg" height="20px" width="20px" alt="svgrepo.com">Bar</li>
+								</ul>
+								<a class="btn btn-primary"
+									href="https://www.booking.com/hotel/ae/premier-inn-dubai-international-airport.es.html" target="_blank">Reserva
 									Aqui</a>
 							</div>
 						</div>
@@ -94,8 +129,17 @@
 									con aire acondicionado y caja fuerte. Todas las mañanas, el
 									alojamiento sirve un desayuno buffet o inglés/irlandés
 									completo.</p>
-								<a
-									href="https://www.booking.com/hotel/ae/premier-inn-dubai-al-jaddaf.es.html">Reserva
+									<h3>Servicios</h3>
+									<ul class="servicios">
+										<li><img src="SVG/swimming-svgrepo-com.svg" height="20px" width="20px" alt="svgrepo.com"> 1 piscina</li>
+										<li><img src="SVG/wifi-svgrepo-com.svg" height="20px" width="20px" alt="svgrepo.com">WiFi Gratis</li>
+										<li><img src="SVG/family-svgrepo-com.svg" height="20px" width="20px" alt="svgrepo.com">Habitaciones familiares</li>
+										<li><img src="SVG/parking-svgrepo-com.svg" height="20px" width="20px" alt="svgrepo.com">Parking Gratis</li>
+										<li><img src="SVG/gym-svgrepo-com.svg" height="20px" width="20px" alt="svgrepo.com">Centro de fitness</li>
+										<li><img src="SVG/bar-svgrepo-com.svg" height="20px" width="20px" alt="svgrepo.com">Bar</li>
+									</ul>
+								<a class="btn btn-primary"
+									href="https://www.booking.com/hotel/ae/premier-inn-dubai-al-jaddaf.es.html" target="_blank">Reserva
 									Aqui</a>
 							</div>
 

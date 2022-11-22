@@ -15,27 +15,42 @@
 <link href="imagenes/dubai.ico" rel="icon">
 </head>
 <body>
-	<header
-		class="d-flex flex-wrap justify-content-center py-3 border-bottom"
-		style="background-color: #CFFDF5">
-		<img src="imagenes/Banner_dubai.png" alt="Banner Dubái"
-			class="d-flex mb-3 mb-md-0 me-md-auto" width="200px">
-		<ul class="nav nav-pills">
-			<li class="nav-item"><a href="index.jsp" class="nav-link">Inicio</a></li>
-			<li class="nav-item"><a href="Comida.jsp"
-				class="nav-link active" aria-current="page">Comida</a></li>
-			<li class="nav-item"><a href="Hospedaje.jsp" class="nav-link">Hospedaje</a></li>
-			<li class="nav-item"><a href="Interes.jsp" class="nav-link">Lugar Interes</a></li>
-			<li class="nav-item"><a href="Mapa.jsp" class="nav-link">Mapa</a></li>
-			<li class="nav-item"><a href="Evaluacion.jsp" class="nav-link">Evaluacion</a></li>
-		</ul>
+	<header style="background-color: #CFFDF5">
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-fluid">
+				<a class="navbar-brand"> <img src="imagenes/Banner_dubai.png"
+					alt="Banner Dubái" class="d-flex mb-3 mb-md-0 me-md-auto"
+					width="200px">
+				</a>
+				<button class="navbar-toggler" type="button"
+					data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end"
+					id="navbarSupportedContent">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a href="index.jsp" class="nav-link">Inicio</a></li>
+						<li class="nav-item"><a href="Comida.jsp"
+							class="nav-link active" aria-current="page">Comida</a></li>
+						<li class="nav-item"><a href="Hospedaje.jsp" class="nav-link">Hospedaje</a></li>
+						<li class="nav-item"><a href="Interes.jsp" class="nav-link">Lugar
+								Interes</a></li>
+						<li class="nav-item"><a href="Mapa.jsp" class="nav-link">Mapa</a></li>
+						<li class="nav-item"><a href="Evaluacion.jsp"
+							class="nav-link">Evaluacion</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</header>
 	<main>
 		<div class="imagen_fondo">
 			<h1 class="titulo_banner">Comida</h1>
 		</div>
-		<section class="comida">
-		<h1>Comida Típica de Dubái</h1>
+		<section class="centrar">
+			<h1>Comida Típica de Dubái</h1>
 			<div class="carrusel">
 				<div id="carouselExampleControls" class="carousel slide"
 					data-bs-ride="carousel">
@@ -67,10 +82,10 @@
 			</div>
 		</section>
 		<section class="lugares">
-		<h1>Restaurantes</h1>
-			<div class="d-flex justify-content-center">
-				<div class="p-2">
-					<h1>Tribes Carnivore</h1>
+			<h1>Restaurantes</h1>
+			<div class="d-flex">
+				<div class="p-2 centrar">
+					<h3>Tribes Carnivore</h3>
 					<p>Considerado como uno de los mejores restaurantes de Dubái,
 						Tribes Carnivore está ubicado en el Dubai Mall y además de tener
 						una amplia carta de buen producto, cuenta con un personal amable,
@@ -79,21 +94,19 @@
 					<img class="img-fluid" alt="Tribes Carnivore"
 						src="imagenes/Tribes.jpg" width="500px" height="320px">
 				</div>
-				<div class="p-2">
-					<h1>Arabian Tea House Restaurant Café</h1>
+				<div class="p-2 centrar">
+					<h3>Arabian Tea House Restaurant Café</h3>
 					<p>Ubicado en Al Fahidi, este es otro de los restaurantes donde
 						comer en Dubái más recomendados y que sin duda, debes probar.
 						Además de ser uno de los puntos más fotografiados de la ciudad, ya
 						que tiene una arquitectura preciosa, tanto la calidad de la comida
-						como el servicio son perfectos, por lo que no nos extraña lo más
-						mínimo que esté en las primeras posiciones de restaurantes de
-						Dubái más recomendados.</p>
+						como el servicio son perfectos.</p>
 					<img class="img-fluid" alt="Arabian Tea House Restaurant Café"
 						src="imagenes/Arabian_Tea.jpg" width="500px" height="320px">
 				</div>
 			</div>
 		</section>
-		<section class="comida">
+		<section class="centrar">
 			<h1>Magoog Recipe</h1>
 			<iframe width="560" height="315"
 				src="https://www.youtube.com/embed/A9l5TgG9u2M"
