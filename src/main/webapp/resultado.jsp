@@ -11,7 +11,10 @@
 	rel="stylesheet"
 	integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
 	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 <link href="css/estilos.css" rel="stylesheet">
+
 <link href="imagenes/dubai.ico" rel="icon">
 </head>
 <body>
@@ -49,21 +52,15 @@
 			<a class="btn btn-primary" href="tabla.jsp"> Mostrar Tabla de
 				Posiciones </a>
 		</section>
-
 		<section>
-			<form action="preguntas.jsp">
-				<div class="form-floating mb-3">
-					<input type="text" class="form-control" id="floatingInput"
-						placeholder="nombre"> <label for="floatingInput">Nombre</label>
-				</div>
+			<form action="gracias.jsp">
 				<div class="mb-3">
-					<label for="formFile" class="form-label">Ingrese su Foto
-						(.jpg)</label> <input class="form-control" type="file" id="formFile"
-						accept=".jpg, .jpeg">
+					<label for="exampleFormControlTextarea1" class="form-label">Sugerencias</label>
+					<textarea class="form-control" id="exampleFormControlTextarea1"
+						rows="3"></textarea>
 				</div>
 				<div class="centrar">
-					<input type="submit" value="Siguiente" /> <input type="reset"
-						value="Borrar">
+					<input type="submit" value="Inicio"/>
 				</div>
 			</form>
 		</section>
