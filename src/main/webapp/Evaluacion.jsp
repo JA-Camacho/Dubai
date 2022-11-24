@@ -51,21 +51,28 @@
 		</section>
 
 		<section>
-			<form action="preguntas.jsp">
+			<form action="preguntas.jsp" method="post">
 				<div class="form-floating mb-3">
 					<input type="text" class="form-control" id="floatingInput"
-						placeholder="nombre"> <label for="floatingInput">Nombre</label>
+						placeholder="nombre" name="txtNombre"> <label
+						for="floatingInput">Nombre</label>
 				</div>
 				<div class="mb-3">
 					<label for="formFile" class="form-label">Ingrese su Foto
 						(.jpg)</label> <input class="form-control" type="file" id="formFile"
-						accept=".jpg, .jpeg">
+						accept=".jpg, .jpeg" name="imagen">
 				</div>
 				<div class="centrar">
 					<input type="submit" value="Siguiente" /> <input type="reset"
 						value="Borrar">
 				</div>
+				<div class="invisible">
+					<input type="text" name="txtfoto" id="disabledTextInput">
+				</div>
 			</form>
+			<script>
+			
+			</script>
 		</section>
 	</main>
 	<footer
@@ -87,6 +94,20 @@
 				href="https://github.com/thehaterr"><img src="SVG/github.svg"
 					alt="GitHub" width="16" height="16"></a></li>
 		</ul>
+		<script>
+		let foto=document.getElementById("formFile");
+		let setDataFoto=document.getElementById("disabledTextInput");
+		foto.addEventListener("change", function() {
+			const reader = new FileReader();
+  		reader.addEventListener("load", () => {
+			setDataFoto.value = reader.result;
+  		});		
+  		reader.readAsDataURL(this.files[0]);
+  		console.log(reader);
+  		
+		});		 
+		
+		</script>
 	</footer>
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

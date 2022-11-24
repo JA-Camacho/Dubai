@@ -1,5 +1,6 @@
+<%@page import="com.usuarios.negocio.Usuario"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8" import="com.usuarios.*"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,13 +46,19 @@
 		</nav>
 	</header>
 	<main>
+		<%
+		Usuario user = new Usuario();
+		String nombre = request.getParameter("txtNombre");
+		String foto = request.getParameter("txtfoto");
+		user.ingresarUsuario(nombre, foto);
+		%>
 		<section style="padding: 50px">
-			<form action="resultado.jsp">
+			<form action="resultado.jsp" method="post">
 				<div class="mb-3 row">
 					<label for="inputYear" class="col-sm-3 col-form-label">¿En
 						que año la poblacion de Dubái era de un millón de personas?</label>
 					<div class="col-sm-8" style="align-self: center;">
-						<input type="number" class="form-control" id="inputPassword">
+						<input type="number" class="form-control" id="inputPassword" name="year">
 					</div>
 				</div>
 
