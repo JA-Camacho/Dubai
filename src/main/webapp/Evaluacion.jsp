@@ -54,13 +54,13 @@
 			<form action="preguntas.jsp" method="post">
 				<div class="form-floating mb-3">
 					<input type="text" class="form-control" id="floatingInput"
-						placeholder="nombre" name="txtNombre"> <label
+						placeholder="nombre" name="txtNombre" required> <label
 						for="floatingInput">Nombre</label>
 				</div>
 				<div class="mb-3">
 					<label for="formFile" class="form-label">Ingrese su Foto
 						(.jpg)</label> <input class="form-control" type="file" id="formFile"
-						accept=".jpg, .jpeg" name="imagen">
+						accept=".jpg, .jpeg" name="imagen" required>
 				</div>
 				<div class="centrar">
 					<input type="submit" value="Siguiente" /> <input type="reset"

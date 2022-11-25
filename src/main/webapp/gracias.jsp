@@ -5,12 +5,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="6;URL=index.jsp" />
 <title>Evaluación</title>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
 	rel="stylesheet"
 	integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
 	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+	integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+	crossorigin="anonymous" />
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 <link href="css/estilos.css" rel="stylesheet">
@@ -48,75 +53,23 @@
 		</nav>
 	</header>
 	<main>
-		<%
-		Nota nota = new Nota();
-		Usuario user = new Usuario();
-		int id_usuario = user.consultarUsuario();
-		int resp1 = Integer.parseInt(request.getParameter("year"));
-		String[] resp2 = request.getParameterValues("checkbox");
-		int resp3 = Integer.parseInt(request.getParameter("cmbRascacielos"));
-		int resp4 = Integer.parseInt(request.getParameter("inlineRadioOptions"));
-		int resp5 = Integer.parseInt(request.getParameter("conexion"));
-		int nota1 = nota.calcularNota1(resp1);
-		int nota2 = nota.calcularNota2(resp2);
-		int nota3 = nota.calcularNota3(resp3);
-		int nota4 = nota.calcularNota4(resp4);
-		int nota5 = nota.calcularNota5(resp5);
-		int notaf = nota1 + nota2 + nota3 + nota4 + nota5;
-		nota.ingresarNota(nota1, nota2, nota3, nota4, nota5, notaf, id_usuario);
-		%>
-		<section class="text-end" style="margin: 20px">
-			<a class="btn btn-primary" href="tabla.jsp"> Mostrar Tabla de
-				Posiciones </a>
-		</section>
-		<section class="centrar">
+		<section class="centrar" style="margin: 20px">
+			<h1>Dubái</h1>
 			<div class="card" style="width: 50rem;">
 				<div class="card-body" style="padding: 20px;">
-					<h1>Tu Puntaje es:</h1>
-					<h2><%=notaf%>/5
-					</h2>
 					<p>
-						Gracias por haber participado en nuestra evaluación. <br> Por
-						favor puntúanos y déjanos tus sugerencias para seguir mejorando
-						nuestra página.
+						<%
+						int id_usuario = Integer.parseInt(request.getParameter("id_usuario"));
+						int num = Integer.parseInt(request.getParameter("cal"));
+						String sugerencia = request.getParameter("sugerencia");
+						Puntuacion puntuacion = new Puntuacion();
+						puntuacion.ingresarPuntuacion(num, sugerencia, id_usuario);
+						out.print(puntuacion.despedida(num));
+						%>
 					</p>
 				</div>
 			</div>
-			<form action="gracias.jsp?id_usuario=<%=id_usuario%>" method="post">
-				<div class="col-12">
-					<div class="card">
-						<div class="card-header">
-							<h2>Calificanos</h2>
-						</div>
-						<div class="card-body">
-							<div class="col-12 centrar">
-								<span class="fa fa-star" onclick="calificar(this)"
-									style="cursor: pointer;" id="1estrella"></span> <span
-									class="fa fa-star" onclick="calificar(this)"
-									style="cursor: pointer;" id="2estrella"></span> <span
-									class="fa fa-star" onclick="calificar(this)"
-									style="cursor: pointer;" id="3estrella"></span>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="card-header">
-						<h2>Sugerencias</h2>
-					</div>
-					<div class="card-body">
-						<textarea class="form-control" id="exampleFormControlTextarea1"
-							rows="3" name="sugerencia" placeholder="Sugerencia..."></textarea>
-					</div>
-				</div>
-				<div class="invisible">
-					<input class="hidden" type="text" name="cal" id="cal">
-				</div>
-				<div class="centrar">
-					<input type="submit" value="Enviar" />
-				</div>
-			</form>
+			<img alt="Dubai" src="imagenes/3.jpg" width="500px">
 		</section>
 	</main>
 	<footer
@@ -143,21 +96,5 @@
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
 		crossorigin="anonymous"></script>
-	<script>
-		var contador;
-		function calificar(item) {
-			let setDataEstrella = document.getElementById("cal");
-			console.log(setDataEstrella);
-			contador = item.id[0];
-			let nombre = item.id.substring(1);
-			setDataEstrella.value = contador;
-			for (let i = 0; i < 3; i++) {
-				if (i < contador)
-					document.getElementById((i + 1) + nombre).style.color = "orange";
-				else
-					document.getElementById((i + 1) + nombre).style.color = "black";
-			}
-		}
-	</script>
 </body>
 </html>

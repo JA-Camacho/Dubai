@@ -58,59 +58,67 @@
 					<label for="inputYear" class="col-sm-3 col-form-label">¿En
 						que año la poblacion de Dubái era de un millón de personas?</label>
 					<div class="col-sm-8" style="align-self: center;">
-						<input type="number" class="form-control" id="inputPassword" name="year">
+						<input type="number" class="form-control" id="inputPassword"
+							name="year" required>
 					</div>
 				</div>
 
 				<div class="mb-3 row">
 					<label for="inputYear" class="col-sm-3 col-form-label"
-						style="align-self: center;">¿Qué Idiomas se Hablan en
+						style="align-self: center;">¿Qué Idiomas Predominan en
 						Dubái?</label>
 					<div class="col-sm-8" style="align-self: center;">
 						<div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="checkbox" value=""
-									id="flexCheckDefault"> <label class="form-check-label"
-									for="flexCheckDefault"> Inglés </label>
+								<input class="form-check-input" type="checkbox" value="1"
+									id="flexCheckDefault" name="checkbox"> <label
+									class="form-check-label" for="flexCheckDefault" > Inglés
+								</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="checkbox" value=""
-									id="flexCheckDefault"> <label class="form-check-label"
-									for="flexCheckDefault"> Portugues </label>
+								<input class="form-check-input" type="checkbox" value="2"
+									id="flexCheckDefault" name="checkbox"> <label
+									class="form-check-label" for="flexCheckDefault">
+									Portugues </label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="checkbox" value=""
-									id="flexCheckDefault"> <label class="form-check-label"
-									for="flexCheckDefault"> Punyabí </label>
-							</div>
-						</div>
-						<div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="checkbox" value=""
-									id="flexCheckDefault"> <label class="form-check-label"
-									for="flexCheckDefault"> Chino </label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="checkbox" value=""
-									id="flexCheckDefault"> <label class="form-check-label"
-									for="flexCheckDefault"> Español </label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="checkbox" value=""
-									id="flexCheckDefault"> <label class="form-check-label"
-									for="flexCheckDefault"> Esperanto </label>
+								<input class="form-check-input" type="checkbox" value="3"
+									id="flexCheckDefault" name="checkbox"> <label
+									class="form-check-label" for="flexCheckDefault">
+									Punyabí </label>
 							</div>
 						</div>
 						<div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="checkbox" value=""
-									id="flexCheckDefault"> <label class="form-check-label"
-									for="flexCheckDefault"> Frances </label>
+								<input class="form-check-input" type="checkbox" value="4"
+									id="flexCheckDefault" name="checkbox"> <label
+									class="form-check-label" for="flexCheckDefault"> Chino
+								</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="checkbox" value=""
-									id="flexCheckDefault"> <label class="form-check-label"
-									for="flexCheckDefault"> Árabe</label>
+								<input class="form-check-input" type="checkbox" value="5"
+									id="flexCheckDefault" name="checkbox"> <label
+									class="form-check-label" for="flexCheckDefault">
+									Español </label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" value="6"
+									id="flexCheckDefault" name="checkbox"> <label
+									class="form-check-label" for="flexCheckDefault">
+									Esperanto </label>
+							</div>
+						</div>
+						<div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" value="7"
+									id="flexCheckDefault" name="checkbox"> <label
+									class="form-check-label" for="flexCheckDefault">
+									Frances </label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" value="8"
+									id="flexCheckDefault" name="checkbox"> <label
+									class="form-check-label" for="flexCheckDefault"> Árabe</label>
 							</div>
 						</div>
 					</div>
@@ -119,8 +127,8 @@
 					<label class="col-sm-3 col-form-label">¿Cuál es el
 						Rascacielos más Grande del Mundo que está Ubicado en Dubái?</label>
 					<div class="col-sm-8" style="align-self: center;">
-						<select class="form-select " aria-label="Default select example">
-							<option selected>Selecione...</option>
+						<select name="cmbRascacielos" class="form-select " aria-label="Default select example">
+							<option value="0" selected>Seleccione...</option>
 							<option value="1">Burj Al Arab</option>
 							<option value="2">Dubai Mall</option>
 							<option value="3">Burj Khalifa</option>
@@ -134,17 +142,17 @@
 					<div style="align-self: center;">
 						<div class="form-check form-check-inline">
 							<input class="form-check-input" type="radio"
-								name="inlineRadioOptions" id="inlineRadio1" value="option1">
+								name="inlineRadioOptions" id="inlineRadio1" value="1" required>
 							<label class="form-check-label" for="inlineRadio1">Cristianismo</label>
 						</div>
 						<div class="form-check form-check-inline">
 							<input class="form-check-input" type="radio"
-								name="inlineRadioOptions" id="inlineRadio2" value="option2">
+								name="inlineRadioOptions" id="inlineRadio2" value="2">
 							<label class="form-check-label" for="inlineRadio2">Islam</label>
 						</div>
 						<div class="form-check form-check-inline">
 							<input class="form-check-input" type="radio"
-								name="inlineRadioOptions" id="inlineRadio3" value="option3">
+								name="inlineRadioOptions" id="inlineRadio3" value="3">
 							<label class="form-check-label" for="inlineRadio3">Hinduísmo</label>
 						</div>
 					</div>
@@ -153,7 +161,7 @@
 					<label for="inputYear" class="col-sm-3 col-form-label">¿Cuántas
 						conexiones son necesarias para el vuelo de Quito a Dubái?</label>
 					<div class="col-sm-8" style="align-self: center;">
-						<input type="number" class="form-control" id="inputPassword">
+						<input name="conexion" type="number" class="form-control" id="inputPassword" required>
 					</div>
 				</div>
 				<div class="centrar">

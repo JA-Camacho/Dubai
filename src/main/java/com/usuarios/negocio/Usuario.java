@@ -1,6 +1,8 @@
 package com.usuarios.negocio;
 
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 import com.usuarios.datos.Conexion;
 
@@ -63,5 +65,26 @@ public class Usuario {
 			}
 		}
 		return result;
+	}
+	
+
+	public int consultarUsuario()
+	{
+		String sql="SELECT MAX(id_usuario) FROM tb_usuario";
+		Conexion con=new Conexion();
+		int id_usuario = 0;
+		ResultSet rs=null;
+		rs=con.Consulta(sql);
+		try {
+			if(rs.next())
+			{
+				id_usuario = rs.getInt(1);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.out.print(e.getMessage());
+		}
+		return id_usuario;
 	}
 }
