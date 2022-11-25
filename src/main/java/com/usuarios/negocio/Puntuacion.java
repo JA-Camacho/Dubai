@@ -102,11 +102,11 @@ public class Puntuacion {
 	
 	public String despedida(int puntuacion) {
 		if(puntuacion == 1)
-			return "Lamentamos que nuestra pagina no sea de tu agrado, tomaremos tu sugerencia y seguiremos mejorando.";
+			return "Lamentamos que nuestra página no sea de tu agrado, tomaremos tu sugerencia y seguiremos mejorando.";
 		else if (puntuacion == 2)
-			return "Gracias por tu puntuacion, seguiremos mejorando para que nuestra pagina te guste más.";
+			return "Gracias por tu puntuación, seguiremos mejorando para que nuestra página te guste más.";
 		else
-			return "Nos Alegra que te haya gustado nuestra pagina, cuantales a tus amigos de nuestra pagina para seguir creciendo.";
+			return "Nos Alegra que te haya gustado nuestra página, cuentales a tus amigos de nuestra página para seguir creciendo.";
 	}
 
 
