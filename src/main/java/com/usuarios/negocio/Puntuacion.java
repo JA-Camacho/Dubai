@@ -88,7 +88,7 @@ public class Puntuacion {
 			{
 				tabla+="<tr><td><h3>"+rs.getString(1)+"</h3></td>"
 						+ "<td><h3>"+rs.getInt(2)+"</h3></td>"
-						+ "<td><img class=\"rounded-circle\" alt=\"\" src=\""+rs.getString(3)+"\" width=\"200px\"></td>"
+						+ "<td><img class=\"rounded-circle\" alt=\"\" src=\""+rs.getString(3)+"\" width=\"200px\" height=\"200px\"></td>"
 						+ "</td></tr>";
 			}
 		} catch (SQLException e) {
